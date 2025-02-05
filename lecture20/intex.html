@@ -11,19 +11,28 @@
         margin: 2px;
         padding: 2px;
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-direction: column;
+        height: 1200px;
+        /* flex-wrap: wrap; */
+        justify-content: start;
+        align-items: start;
+        align-content: center;
     }
+    
     .box{
-        height: 200px;
-        width: 200px;
+        /* height: 200px;
+        width: 200px; */
         border: 2px solid black;
         margin: 2px;
         padding: 2px;
     }
     #box1{
             background-color: aqua;
-    }
+            /* order: 500;
+            flex-grow: 5 ;*/
+            align-self: center;
+             
+    } 
     #box2{
         background-color: blue;
     }
@@ -34,13 +43,13 @@
         background-color: brown;
     }
    </style>
-</head>
+</head> 
 <body>
     <div class="container">
-        <div class="box" id="box1"></div>
-        <div class="box" id="box2"></div>
-        <div class="box" id="box3"></div>
-        <div class="box" id="box4"></div>
+        <div class="box" id="box1">box1</div>
+        <div class="box" id="box2">box2</div>
+        <div class="box" id="box3">box3</div>
+        <div class="box" id="box4">box4</div>
     </div>
 </body>
 </html>
