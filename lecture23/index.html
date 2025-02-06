@@ -37,6 +37,7 @@
             animation-timing-function: linear;
             /* animation-direction: alternate-reverse ; */
             animation-fill-mode: forwards;
+            animation: 5s linear 1s infinite alternate none running rightMovement;
         }
         @keyframes rightMovement {
             from{
@@ -48,6 +49,29 @@
                 left: 1200px;
             }
         }
+        #box2{
+            width: 350px;
+            height: 80px;
+
+            background-color: blue;
+
+            border-radius: 10px;
+
+            margin: 10px;
+            border: 10px;
+            position: relative ;
+            animation: 5s ease-in 1s infinite alternate none running leftMovement;
+        }
+        @keyframes leftMovement {
+            from{
+                top: 680px;
+                left: 1350px;
+            }
+            to{
+                top: 680px;
+                left: 0px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -56,9 +80,10 @@
         <div class="box">
             <!-- <img style="height: fit-content; width: inherit;" src="mustang.jpeg" alt=""> -->
         </div>
-        <div class="box2">
+        <div id="box2">
             
         </div>
+        
     </div>
 </body>
 </html>
