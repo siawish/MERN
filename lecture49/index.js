@@ -14,3 +14,9 @@ console.log(dest);
 
 // let des={...obj};
 
+for(let key in obj){
+    let newKey=key;
+    let newValue=obj(key);
+    dest[key]=obj(key);
+}
+console.log(dest);
