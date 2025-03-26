@@ -3,48 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leet Metrics</title>
+    <title>LeetMetric</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
     <div class="container">
-        <!-- heading 
-            user 
-            sats -->
+        <!-- heading
+        user
+        stats -->
+        <h1>LeetMetric</h1>
 
-            <h1>LeetMetric</h1>
-
-            <div class="userContainer">
-                <p>Enter Your Username Below</p>
-                <div class="user-input-container">
-                    <input type="text" placeholder="Enter Your Username Here" id ="user-input">
-                    <button id="search-btn">Search</button>
-                </div>
+        <div class="user-container">
+            <p>Enter your username below:</p>
+            <div class="user-input-container">
+                <input type="text" placeholder="enter your username here" id="user-input">
+                <button id="search-btn">Search</button>
             </div>
+        </div>
 
-            <div class="statsContainer">
-                <div class="progress">
-                    <div class="progress-item circle">
-                        <div class="easy-progress">
-                            <span id="easy-label">Easy</span>
-                        </div>
-                    </div>
-                    <div class="progress-item circle">
-                        <div class="medium-progress">
-                            <span id="medium-label">medium</span>
-                        </div>
-                    </div>
-                    <div class="progress-item circle">
-                        <div class="hard-progress">
-                            <span id="hard-label">hard</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="stats-container">
             
-            <div class="stats-card">
-                <!-- directly populate card here from java  -->
+            <div class="progress">
+
+                <div class="progress-item">
+                    <div class="easy-progress circle">
+                        <span id="easy-label"></span>
+                        <p>Easy</p>
+                    </div>
+                </div>
+
+                <div class="progress-item ">
+                    <div class="medium-progress circle">
+                        <span id="medium-label"></span>
+                        <p>Medium</p>
+                    </div>
+                </div>
+
+                <div class="progress-item ">
+                    <div class="hard-progress circle">
+                        <span id="hard-label"></span>
+                        <p>Hard</p>
+                    </div>
+                </div>
+
             </div>
+
+            <div class="stats-cards">
+                <!-- directly populate card here from the JS code -->
+            </div>
+
+        </div>
+
     </div>
 
     <script src="script.js"></script>
